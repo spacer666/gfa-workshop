@@ -1,0 +1,154 @@
+/*** Reset ***/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** Default styles ***/
+body{
+  margin: 0 auto;
+  width: 768px;
+}
+
+ul{
+  list-style-type: square;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+main section article:nth-of-type(2) h1{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Dancing Script', sans-serif;
+}
+
+main section article:nth-of-type(2) h2{
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+p, ul{
+  line-height: 1.5;
+}
+
+/*** Header ***/
+header{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: inherit;
+  background: #222;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+header nav ul li{
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul li:hover{
+  background: #555;
+}
+
+/*** Main ***/
+main{
+  margin-top: 50px;
+}
+
+main section#bio, main section#achievements, main section#experience, main section#training{
+  display: flex;
+  min-height: 500px;
+}
+
+main section#achievements, main section#experience, main section#training{
+  padding: 20px 0;
+}
+
+main section#bio article:first-child{
+  position: relative;
+  flex: 0 1 45%;
+  background: url('https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main section#bio article:first-child h1{
+  position: absolute;
+  left: 3.75%;
+  bottom: 3%;
+  font-size: 2rem;
+}
+
+main section#bio article:first-child h1 span{
+  font-size: 3.5rem;
+}
+
+main section#bio article:last-child, main section#achievements article:last-child, main section#experience article:last-child, main section#training article:last-child{
+  flex: 0 1 55%;
+}
+
+main section#bio article:last-child > *, main section#achievements article:last-child > *, main section#experience article:last-child > *, main section#training article:last-child > *{
+  margin: 30px;
+}
+
+main section#bio article:last-child ul, main section#experience article:last-child ul, main section#training article:last-child ul{
+  padding-left: 25px;
+}
+
+main section#bio article:last-child p span{
+  font-weight: bold;
+}
+
+main section#achievements article:first-child, main section#experience article:first-child, main section#training article:first-child{
+  position: relative;
+  flex: 0 1 45%;
+}
+
+main section#experience article:last-child h2, main section#training article:last-child h2{
+  margin-bottom: 0;
+}
+
+main section#experience article:last-child h2 + p, main section#training article:last-child h2 + p{
+  margin-top: 0;
+  font-family: 'Merriweather', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+main section article:first-of-type blockquote{
+  position: relative;
+  padding: 50px 40px;
+  background-image: linear-gradient(
+    rgb(60, 110, 80), rgb(0, 50, 0)
+  );
+  font-size: 3rem;
+  color: #fff;
+}
+
+main section article:first-of-type blockquote:before{
+  display: block;
+  font-family: 'Abril Fatface', sans-serif;
+  content: '\201C';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 150px;
+}
